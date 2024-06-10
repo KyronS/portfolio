@@ -45,7 +45,7 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/reid.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Reid M Photography</h2>
@@ -57,7 +57,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/vr.png" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>VR Sanctuary</h2>
@@ -69,7 +69,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="images/green-produce-ltd-teas.png" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Green Produce Ltd. TEAS</h2>
@@ -148,9 +148,10 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li class="button submit">Send Message</li>
 										</ul>
 									</form>
+									<p id="confirmation-message" style="display: none;" >Your message was sent!</p>
 								</section>
 								<section>
 									<ul class="contact">
@@ -199,6 +200,14 @@
 			</footer>
 
 		<!-- Scripts -->
+			<script>
+				document.getElementById('send-button').addEventListener('click', function(event) {
+					// event.preventDefault(); // Prevent the default form submission
+					// document.getElementById('confirmation-message').classList.remove('hidden');
+					// document.getElementById('confirmation-message').classList.add('visible');
+            		document.getElementById('confirmation-message').style.display = 'block';
+				});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
