@@ -45,7 +45,7 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/reid.png" alt="" data-position="center center" /></a>
+							<a href="#" class="image fit"><img src="images/reid.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Reid M Photography</h2>
@@ -69,7 +69,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/green-produce-ltd-teas.png" alt="" data-position="25% 25%" /></a>
+							<a href="generic.html" class="image"><img src="images/green-produce-ltd-teas.png" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Green Produce Ltd. TEAS</h2>
@@ -132,7 +132,7 @@
 							<p>Ready to bring your project to life? Whether you have a question, need more information, or want to discuss how our services can meet your unique needs, feel free to reach out. Kyron Saunders' Development Studio is here to provide expert guidance and support every step of the way. Contact us today to start your journey towards innovative and efficient software solutions.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" id="myForm">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -148,7 +148,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li class="button submit">Send Message</li>
+											<li value="Send Message" class="button submit">Send Message</li>
 										</ul>
 									</form>
 									<p id="confirmation-message" style="display: none;" >Your message was sent!</p>
@@ -163,7 +163,7 @@
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">kyronsaunders@gmail.com</a>
+											<span>kyronsaunders@gmail.com</span>
 										</li>
 										<li>
 											<h3>Phone</h3>
@@ -200,6 +200,16 @@
 			</footer>
 
 		<!-- Scripts -->
+			<!-- <script>
+				document.getElementById('email-link').addEventListener('click', function(event) {
+					event.preventDefault(); // Prevent the default link behavior
+					var email = 'kyronsaunders@gmail.com';
+					var subject = 'Inquiry';
+					var body = 'Hello, I would like to know more about your services.';
+					var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+					window.location.href = mailtoLink;
+				});
+			</script> -->
 			<script>
 				document.getElementById('send-button').addEventListener('click', function(event) {
 					// event.preventDefault(); // Prevent the default form submission

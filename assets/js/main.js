@@ -39,8 +39,13 @@
 					event.stopPropagation();
 					event.preventDefault();
 
-				// Submit form.
-					$(this).parents('form').submit();
+					// var x = document.getElementById("myForm").innerText;
+					// if(x ==0 )
+					// 	return;
+				// Submit form
+				$(this).parents('form').submit(alert("Your message was sent!"));
+				document.getElementById("myForm").reset();
+					
 
 			});
 
